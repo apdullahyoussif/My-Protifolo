@@ -1,79 +1,64 @@
-import AboutImage from "../assets/profile1.png";
+/** @format */
+
+import AboutImage from '../assets/profile1.png';
 
 const About = () => {
-  return (
-    <div className="bg-black text-white py-20" id="about">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div className="flex flex-col md:flex-row items-center md:space-x-12">
-          <img
-            src={AboutImage}
-            alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
-          />
-          <div className="flex-1">
-            <p className="text-lg mb-8">
-              I am a passionate full-stack developer with a focus on building
-              modern and responsive web applications, I strive to create
-              seamless and efficient user experiences.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Javascript JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 flex justify-between text-center">
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        2+
-                    </h3>
-                    <p>Years Experience</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Projects Completed</p>
-                </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div
+			className='bg-black text-white py-20'
+			id='about'>
+			<div className='container mx-auto px-8 md:px-16 lg:px-24'>
+				<h2 className='text-4xl font-bold text-center mb-12'>About Me</h2>
+				<div className='flex flex-col md:flex-row items-center md:space-x-12'>
+					<img
+						src={AboutImage}
+						alt=''
+						className='w-72 h-80 rounded object-contain md:hidden mb-8 md:mb-0'
+					/>
+					<section
+						id='skills'
+						className='bg-gray-900 rounded-2xl text-white py-12 px-8 md:px-16 lg:px-24'>
+						<div className='container mx-auto'>
+							<h2
+								className='bg-gradient-to-r text-center mb-5 from-green-400 to-blue-500 text-white
+                      transform transition  duration-300 hover:scale-105 px-4 py-2 rounded-full '>
+								My Skills
+							</h2>
+							<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>HTML</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>CSS</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>Tailwind CSS</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>JavaScript</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>TypeScript</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>React.js</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>Redux Toolkit</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>Next.js</p>
+								</div>
+								<div className='bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition duration-300'>
+									<p className='text-lg font-medium'>Strapi</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default About;
