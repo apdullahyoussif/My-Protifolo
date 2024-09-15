@@ -3,7 +3,7 @@
 import employeeMSImage from '../assets/Ecommerc.png';
 import Project from '../assets/Project.png';
 import ProjectEditor from '../assets/projectEditor.png';
-import Bank from '../assets/BankPNG.png';
+import Bank from '../assets/Bank.png';
 
 const projects = [
 	{
